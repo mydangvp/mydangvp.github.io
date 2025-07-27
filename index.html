@@ -394,6 +394,35 @@
             font-weight: bold;
         }
 
+        .publication-title {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .publication-title:hover {
+            color: var(--secondary-color);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .publication-item.clickable::after {
+            content: '🔗';
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+
+        .publication-item.clickable:hover::after {
+            opacity: 1;
+        }
+
+        .publication-item {
+            position: relative;
+        }
+
         /* Footer */
         footer {
             background: var(--primary-color);
@@ -633,50 +662,50 @@
         <div class="container">
             <h2>Publications</h2>
             <div class="publication-list">
-                <div class="publication-item fade-in">
+                <div class="publication-item clickable fade-in">
                     <span class="publication-number">1</span>
-                    <strong>Separation and determination of alkyl sulfate surfactants in wastewater by capillary electrophoresis coupled with contactless conductivity detection (CE-C4D) after preconcentration by simultaneous adsorption using alumina beads</strong><br>
-                    <em>Electrophoresis, 2021, V42, P191–199</em>
+                    <strong><a href="https://doi.org/10.1016/j.jfca.2022.104882" target="_blank" rel="noopener noreferrer" class="publication-title">Inexpensive and simple tool for quality control of nutraceutical and tonic products with capillary electrophoresis and contactless conductivity detection: Some developments in Vietnam</a></strong><br>
+                    <em>Journal of Food Composition and Analysis, January 31, 2023</em>
                 </div>
-                <div class="publication-item fade-in">
+                <div class="publication-item clickable fade-in">
                     <span class="publication-number">2</span>
-                    <strong>Inexpensive and simple tool for quality control of nutraceutical and tonic products with capillary electrophoresis and contactless conductivity detection: some developments in Vietnam</strong><br>
-                    <em>Journal of Food Composition and Analysis, 2022</em>
+                    <strong><a href="https://doi.org/10.1016/j.jchromb.2022.123471" target="_blank" rel="noopener noreferrer" class="publication-title">Simultaneous determination of vitamin B6 and magnesium using capillary electrophoresis coupled with contactless conductivity detection: Method development, validation, and application to pharmaceutical and nutraceutical samples</a></strong><br>
+                    <em>Journal of Chromatography B - Analytical Technologies in the Biomedical and Life Sciences, November 1, 2022</em>
                 </div>
-                <div class="publication-item fade-in">
+                <div class="publication-item clickable fade-in">
                     <span class="publication-number">3</span>
-                    <strong>Simultaneous determination of vitamin B6 and magnesium using capillary electrophoresis coupled with contactless conductivity detection: Method development, validation, and application to pharmaceutical and nutraceutical samples</strong><br>
-                    <em>Journal of Chromatography B, 2022</em>
+                    <strong><a href="https://doi.org/10.47866/2615-9252/vjfc.3935" target="_blank" rel="noopener noreferrer" class="publication-title">Determination of glucosamine in dietary supplement samples by capillary electrophoresis using capacitively coupled contactless conductivity detector (CE-C4D)</a></strong><br>
+                    <em>Vietnam Journal of Food Control, October 5, 2022</em>
                 </div>
-                <div class="publication-item fade-in">
+                <div class="publication-item clickable fade-in">
                     <span class="publication-number">4</span>
-                    <strong>Simultaneous adsorption of alkyl sulfate surfactants on alumina beads: a comparative study between bath and column techniques</strong><br>
-                    <em>analytica Vietnam Conference 2021</em>
+                    <strong><a href="https://doi.org/10.47866/2615-9252/vjfc.3880" target="_blank" rel="noopener noreferrer" class="publication-title">Determination of glucosamine in functional food samples by high performance liquid chromatography (HPLC-FLD)</a></strong><br>
+                    <em>Vietnam Journal of Food Control, March 31, 2022</em>
                 </div>
                 <div class="publication-item fade-in">
                     <span class="publication-number">5</span>
-                    <strong>Determination of glucosamine in dietary supplement samples by capillary electrophoresis using capacitively coupled contactless conductivity detector (CE-C4D)</strong><br>
-                    <em>Food control Conference, 2022</em>
+                    <strong>Simultaneous adsorption of alkyl sulfate surfactants on alumina beads: a comparative study between bath and column techniques</strong><br>
+                    <em>analytica Vietnam Conference, January 1, 2021</em>
                 </div>
-                <div class="publication-item fade-in">
+                <div class="publication-item clickable fade-in">
                     <span class="publication-number">6</span>
-                    <strong>Capillary electrophoresis with capacitively couple contactless conductivity detection (CE-C4D) and some applications in food analysis</strong><br>
-                    <em>Vietnam Journal of Food control, 2018, P1-8</em>
+                    <strong><a href="https://doi.org/10.1002/elps.202000086" target="_blank" rel="noopener noreferrer" class="publication-title">Separation and determination of alkyl sulfate surfactants in wastewater by capillary electrophoresis coupled with contactless conductivity detection after preconcentration by simultaneous adsorption using alumina beads</a></strong><br>
+                    <em>Electrophoresis, July 31, 2020</em>
                 </div>
-                <div class="publication-item fade-in">
+                <div class="publication-item clickable fade-in">
                     <span class="publication-number">7</span>
-                    <strong>Simultaneous determination of alkyl sulfate surfactants by capillary electrophoresis with contactless conductivity detection in wastewater</strong><br>
-                    <em>Vietnam academy of science and technology, 2019, V3, P27-30</em>
+                    <strong><a href="https://doi.org/10.58334/vrtc.jtst.n26.14" target="_blank" rel="noopener noreferrer" class="publication-title">Simultaneous determination of some B-group vitamins in dietary supplement samples by CE-C4D</a></strong><br>
+                    <em>Journal of Tropical Science and Technology, July 31, 2020</em>
                 </div>
                 <div class="publication-item fade-in">
                     <span class="publication-number">8</span>
-                    <strong>Determination of glucosamine in functional food samples by high performance liquid chromatography (HPLC-FLD)</strong><br>
-                    <em>Vietnam Journal of Food control, 2022, V5, P11-23</em>
+                    <strong>Simultaneous determination of alkyl sulfate surfactants by capillary electrophoresis with contactless conductivity detection in wastewater</strong><br>
+                    <em>Vietnam Academy of Science and Technology, January 1, 2019</em>
                 </div>
-                <div class="publication-item fade-in">
+                <div class="publication-item clickable fade-in">
                     <span class="publication-number">9</span>
-                    <strong>Simultaneous determination of some B-group vitamins in dietary supplement samples by CE-C4D</strong><br>
-                    <em>Journal of Tropical Science and Technology, 2022, V26, P137-147</em>
+                    <strong><a href="https://doi.org/10.47866/2615-9252/vjfc.55" target="_blank" rel="noopener noreferrer" class="publication-title">Capillary electrophoresis with capacitively coupled contactless conductivity detection (CE-C4D) and some applications in food analysis</a></strong><br>
+                    <em>Vietnam Journal of Food Control, August 17, 2018</em>
                 </div>
             </div>
         </div>
