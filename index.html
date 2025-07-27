@@ -123,6 +123,24 @@
             }
         }
 
+        /* Profile Image Styles */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            margin: 0 auto 2rem;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
@@ -387,6 +405,12 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 1.5rem;
+            }
+
             .hero h1 {
                 font-size: 2rem;
             }
@@ -448,12 +472,12 @@
     <!-- Hero Section -->
     <header id="home" class="hero">
         <div class="hero-content">
+            <img src="images/profile.jpeg" alt="Thi Huyen My Dang" class="profile-image">
             <h1>Thi Huyen My Dang</h1>
             <p>PhD Researcher in Physical Chemistry</p>
             <p>Institut des Sciences Moléculaires d'Orsay, University of Paris-Saclay</p>
             <div class="contact-info">
                 <a href="mailto:mydangvp@gmail.com">📧 mydangvp@gmail.com</a>
-                <a href="tel:+84375642230">📱 +84 375642230</a>
                 <a href="tel:+33649982759">📱 +33 649982759</a>
             </div>
         </div>
